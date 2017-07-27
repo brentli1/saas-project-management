@@ -1,3 +1,23 @@
+@media(min-width: 992px) {
+  .no-right-padding {
+    padding-right: 0;
+  }
+
+  .no-left-padding {
+    padding-left: 0;
+  }
+}
+
+@media(max-width: 991px) {
+  .no-right-padding {
+    padding: 0;
+  }
+
+  .no-left-padding {
+    padding: 0;
+  }
+}
+
 .nav {
   &__user-name {
     padding: 0 !important;
