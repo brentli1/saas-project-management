@@ -18,73 +18,32 @@
   }
 }
 
-.nav {
-  &__user-name {
-    padding: 0 !important;
-    padding-left: 5px;
-    padding-top: 15px !important;
-    text-align: center;
-    a {
-      color: #fff !important;
-      margin: 0 !important;
-      padding: 5px!important;
+body {
+  padding-top: 70px;
+
+  // Bootstrap overrides
+
+  .navbar {
+    background-color: #595854;
+    box-shadow: 0 0 15px -5px #333;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navbar-brand {
+    padding: 0;
+
+    &__logo {
+      max-height: 100%;
     }
-    a:hover,
-    a:focus {
-      color: #000 !important;
+  }
+
+  .navbar-inverse .navbar-nav>li>a {
+    color: #FFF;
+
+    &:hover {
+      color: #e96e2b;
     }
-  }
-  &__signin {
-    float: right;
-  }
-}
-
-.navbar-brand {
-  height: 61px;
-  line-height: 61px;
-  padding: 0 15px 0 0;
-}
-
-.navbar-toggle {
-  margin-top: 13px;
-}
-
-.nav.navbar-right {
-  padding-bottom: 10px;
-  padding-top: 5px;
-}
-
-.nav.navbar-nav {
-  .navbar-link {
-    border-radius: 5px;
-    color: #fff;
-    margin-top: 15px;
-    padding: 8px;
-  }
-  .navbar-link:focus,
-  .navbar-link:hover {
-    background: #3071a9;
-    color: #fff;
-  }
-  li a {
-    line-height: 61px;
-    margin-right: 5px;
-    padding: 0 10px;
-  }
-}
-
-.nav.navbar-right li {
-  .btn {
-    color: #fff !important;
-    margin-top: 5%;
-  }
-  .btn-danger:hover,
-  .btn-danger:focus {
-    background-color: darken(#d9534f, 20%) !important;
-  }
-  .btn-primary:hover,
-  .btn-primary:focus {
-    background-color: darken(#428bca, 20%) !important;
   }
 }
 
@@ -143,6 +102,16 @@
     .lead {
       font-family: 'Helvetica Neue' !important;
       font-size: 30px !important;
+    }
+  }
+}
+
+.table tr td {
+  a.main-link {
+    color: #428bca;
+
+    &:hover {
+      background: none;
     }
   }
 }
