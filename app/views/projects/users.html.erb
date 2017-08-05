@@ -27,11 +27,15 @@
   </tbody>
 </table>
 
+<div class="page-header">
+  <h3>Users available for project <%= @project.title %></h3>
+</div>
+
 <table class="table table-striped">
   <thead>
     <tr>
       <th>Email</th>
-      <th><%=t '.actions', default: t("helper.actions") %></th>
+      <th><%=t '.actions', default: t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
