@@ -35,8 +35,15 @@ body {
     padding-right: 15px;
   }
 
-  .navbar-brand {
+  .navbar-inverse .navbar-brand {
+    color: #FFF;
+    line-height: 50px;
     padding: 0;
+    padding-right: 20px;
+
+    i {
+      color: #e96e2b;
+    }
 
     &__logo {
       max-height: 100%;
