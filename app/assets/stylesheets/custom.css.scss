@@ -1,3 +1,7 @@
+.container {
+  margin-bottom: 20px;
+}
+
 @media(min-width: 992px) {
   .no-right-padding {
     padding-right: 0;
@@ -65,29 +69,43 @@ body {
 }
 
 .page-home {
+  &__plan-title-container {
+    position: relative;
+  }
+
+  &__plan-title {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    font-weight: 300;
+  }
+
   &__features-items {
+    font-size: 16px;
+    font-weight: 300;
+    list-style: none;
     margin-left: 0;
+    margin-bottom: 15px;
     padding-left: 15px;
+  }
+
+  &__features-item {
+    margin-bottom: 5px;
   }
 
   &__price {
     font-weight: 700;
-    size: 120%;
+    size: 14px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
   }
 
   &__sign-up {
     display: block;
     margin-top: 5px;
-  }
-
-  &__plan {
-    border: 1px solid #e7e7e7;
-    border-radius: 5px;
-    margin-right: 5px;
-
-    h2 {
-      font-size: 28px;
-    }
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
   }
 
   &__features-item--extra {
@@ -103,7 +121,8 @@ body {
   color: #555;
   font-family: 'Helvetica Neue' !important;
   font-stretch: expanded;
-  padding: 150px 0;
+  padding: 150px 20px;
+  position: relative;
   margin-left: 15px;
   margin-right: 15px;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
@@ -115,6 +134,21 @@ body {
       font-family: 'Helvetica Neue' !important;
       font-size: 30px !important;
     }
+  }
+
+  &__bg {
+    background-color: #FFF;
+    bottom: 0;
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  &__z {
+    position: relative;
+    z-index: 2;
   }
 }
 
